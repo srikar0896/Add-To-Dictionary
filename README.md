@@ -16,3 +16,9 @@ Translated words are yet to come this is only for the idea for saving the word h
 Any mistakes correct me.
 Suggestions are welcome.
 My Email-srikar.0896@gmail.com
+
+# Screen shots:
+![Screenshot](https://github.com/srikar0896/Add-To-Dictionary/blob/master/Screenshot%20%2863%29.png)<br>
+![Screenshot](https://github.com/srikar0896/Add-To-Dictionary/blob/master/Screenshot%20%2864%29.png)<br>
+![Screenshot](https://github.com/srikar0896/Add-To-Dictionary/blob/master/Screenshot%20%2865%29.png)<br>
+![Screenshot](https://github.com/srikar0896/Add-To-Dictionary/blob/master/Screenshot%20%2866%29.png)
