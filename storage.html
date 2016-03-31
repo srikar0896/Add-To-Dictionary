@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Translation</title>
+</head>
+<body>
+<!--
+<menu type="context" id="menu1">
+<menuitem label="Save to personal dict." onclick="myfunction(event)" id="this"></menuitem>
+<menu label="HOWDIE..">
+<menuitem label="OMG" onclick="window.location.reload()"></menuitem>
+<menuitem label="Spell" onclick="window.location.reload()"></menuitem>
+</menu>
+</menu>
+
+
+<span id="click" oncontextmenu="myfunction()" contextmenu="menu1" 	>click</span> <span id="on">on</span> <span id="anyelement">any elements</span> in this document to find out which element triggered the onclick event.</p>
+
+<h1>This is a heading</h1>
+
+<button>This is a button</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+function myFunction(){ 
+    
+    //localStorage.setItem("on","final");
+	//var x = ele.id;
+	//var y=x.innerHTML;
+	//localStorage.setItem(x,"Hello,SOLEN");
+	alert("added to personal dictionary");
+	    //var z=localStorage.getItem(y);
+	//document.getElementById(y).innerHTML =z;
+	}
+
+</script>
+-->
+<div>
+<span oncontextmenu="myFunction(this)" contextmenu="mymenu" id="hello" trans="HOLA">hello 
+</span>how are you?
+<span oncontextmenu="myFunction(this)" contextmenu="mymenu" id="mynameis" trans="namiso">mynameis
+
+</span> &nbsp this is dummy text. &nbsp
+<span oncontextmenu="myFunction(this)" contextmenu="mymenu" id="India" trans="Indoi">India
+
+</span>
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus 
+elementum semper nisi. Aenean vulputate eleifend tellus.Aenean leo ligula, porttitor eu, consequat vitae, eleifend 
+ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus
+varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. 
+Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus.
+Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh.
+Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, 
+</div>
+<menu type="context" id="mymenu">
+  <menuitem label="Refresh" onclick="window.location.reload();" icon="favicon.png"></menuitem>
+  <menuitem label="Save to dictionary." onclick="message()"></menuitem>
+  <menu label="Share on..">
+    <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+    <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+  </menu>
+  <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+</menu>
+
+</div>
+
+<script>
+
+function myFunction(ele) {
+		var x=ele.id;
+        var y = document.getElementById(x).getAttribute("trans");		
+        document.getElementById(x).setAttribute("style", "background-color: yellow;");
+		//document.getElementById(x).setAttribute("background-color:yellow")
+		//var y="HOlAYA";
+		//localStorage.clear();
+		localStorage.setItem(x,y);
+		//localStorage.setItem("username","srikar");
+       		
+}
+function message(){
+alert("saved to personal dictionary!!")}
+</script>
+
+
+</body>
+</html>
