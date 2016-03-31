@@ -15,4 +15,6 @@ first the copy is saved i the session storage so that if user wants to undo it t
 Translated words are yet to come this is only for the idea for saving the word however all the schema of the code is most of the part is same.
 Any mistakes correct me.
 Suggestions are welcome.
-Contact-srikar.0896@gmail.com
+My Email-srikar.0896@gmail.com
+
+`this is`
