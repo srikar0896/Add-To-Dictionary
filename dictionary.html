@@ -8,17 +8,17 @@
 <script>
 var app = angular.module("myDictionary", []); 
 app.controller("myCtrl", function($scope) {
-    var products=[];
-	$scope.products = [];
+    var words=[];
+	$scope.words = [];
 	for ( var i = 0, len = localStorage.length; i < len; ++i ) {
-  $scope.products.push(localStorage.getItem( localStorage.key( i ) ));
+  $scope.words.push(localStorage.getItem( localStorage.key( i ) ));
 }
 
     $scope.addItem = function () {
         $scope.errortext = "";
         if (!$scope.addMe) {return;}
-        if ($scope.products.indexOf($scope.addMe) == -1) {
-            $scope.products.push($scope.addMe);
+        if ($scope.words.indexOf($scope.addMe) == -1) {
+            $scope.words.push($scope.addMe);
         } else {
             $scope.errortext = "The item is already in your shopping list.";
         }
@@ -26,7 +26,7 @@ app.controller("myCtrl", function($scope) {
     $scope.removeItem = function (x) {
         $scope.errortext = "";    
         localStorage.removeItem(localStorage.key(x));
-		$scope.products.splice(x, 1);
+		$scope.words.splice(x, 1);
     }
 });
 </script>
@@ -36,7 +36,7 @@ app.controller("myCtrl", function($scope) {
     <h3>Personal Dictionary</h3>
   </header>
   <ul class="w3-ul">
-    <li ng-repeat="x in products" class="w3-padding-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">X</span></li>
+    <li ng-repeat="x in words" class="w3-padding-16">{{x}}<span ng-click="removeItem($index)" style="cursor:pointer;" class="w3-right w3-margin-right">X</span></li>
   </ul>
   <div class="w3-container w3-light-grey w3-padding-16">
     <div class="w3-row w3-margin-top">
